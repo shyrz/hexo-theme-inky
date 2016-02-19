@@ -17,7 +17,7 @@ Tw1nkle is a **Simple**, **Elegant** theme of hexo, update irregularly.
 ## Changelog
 
 [![hexo-image]][hexo-url]
-[![webpack-image]][wepack-url]
+[![webpack-image]][webpack-url]
 [![jquery-image]][jquery-url]
 
 [hexo-image]: https://img.shields.io/badge/Hexo-3.x-02A8FE.svg?style=flat-square
