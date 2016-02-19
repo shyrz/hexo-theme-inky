@@ -1,0 +1,25 @@
+{
+  "name": "hexo-theme-twinkle",
+  "version": "0.1.0",
+  "description": "Another Hexo Theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phantr4x/hexo-theme-twinkle.git"
+  },
+  "keywords": [
+    "Hexo"
+  ],
+  "author": "Phantr4x",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phantr4x/hexo-theme-twinkle/issues"
+  },
+  "homepage": "https://github.com/Phantr4x/hexo-theme-twinkle#readme",
+  "devDependencies": {
+    "webpack": "^1.12.13"
+  }
+}
