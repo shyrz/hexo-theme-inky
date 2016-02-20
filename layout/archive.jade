@@ -1,0 +1,13 @@
+//- archive.jade
+extends _partials/layout
+
+block container
+  include _mixins/post
+  +postList()
+
+block pagination
+  include _mixins/paginator
+  +home()
+
+block information
+  include _partials/_components/information

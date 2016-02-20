@@ -1,25 +1,26 @@
 {
-  "name": "hexo-theme-twinkle",
-  "version": "0.1.0",
-  "description": "Another Hexo Theme.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "hexo": {
+    "version": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Phantr4x/hexo-theme-twinkle.git"
+  "dependencies": {
+    "hexo": "^3.1.0",
+    "hexo-generator-archive": "^0.1.2",
+    "hexo-generator-category": "^0.1.2",
+    "hexo-generator-index": "^0.1.2",
+    "hexo-generator-tag": "^0.1.1",
+    "hexo-renderer-ejs": "^0.1.0",
+    "hexo-renderer-stylus": "^0.3.0",
+    "hexo-renderer-marked": "^0.2.4",
+    "hexo-server": "^0.1.2"
   },
-  "keywords": [
-    "Hexo"
-  ],
-  "author": "Phantr4x",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Phantr4x/hexo-theme-twinkle/issues"
-  },
-  "homepage": "https://github.com/Phantr4x/hexo-theme-twinkle#readme",
   "devDependencies": {
-    "webpack": "^1.12.13"
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
   }
 }

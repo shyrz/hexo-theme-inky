@@ -1,0 +1,6 @@
+paginator:
+  prev: PREV
+  next: NEXT
+  prev-post: "Older Post"
+  next-post: "Later Post"
+  more: ...MORE

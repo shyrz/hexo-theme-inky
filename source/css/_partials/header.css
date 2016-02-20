@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* 路径
+ ----------------------------------------------------------*/
+/* 配色
+ ----------------------------------------------------------*/
+/* 布局
+ ----------------------------------------------------------*/
+/* 字体
+ ----------------------------------------------------------*/
+/* 其他
+ ----------------------------------------------------------*/
+::-moz-selection {
+  color: #f3eacb;
+  background: #704214; }
+
+::-webkit-selection {
+  color: #f3eacb;
+  background: #704214; }
+
+::selection {
+  color: #f3eacb;
+  background: #704214; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #afa790; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #afa790; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #afa790; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #afa790; }
+
+/* 圆角
+ --------------------------------------------------*/
+/* Font
+ --------------------------------------------------*/
+header .nav-list-item {
+  display: inline-block;
+  padding: 19px 10px; }
+
+header ul.nav.nav-list {
+  display: block;
+  min-width: 270px;
+  text-align: center; }
+
+header .nav-list-item a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #73553c;
+  line-height: 1.4;
+  border-bottom: 2px solid transparent;
+  transition: .2s ease-in-out; }
+
+a.nav-list-link.active, a.nav-list-link:hover {
+  border-bottom: 2px solid #704214; }
+
+@media screen and (min-width: 700px) {
+  body {
+    width: 700px;
+    margin: 0 auto; } }
+@media screen and (max-width: 360px) {
+  body {
+    width: 100%; }
+
+  header .nav-list-item {
+    padding: 18px 5px; }
+
+  header .nav-list-item a {
+    letter-spacing: -.06em; } }
+
+/*# sourceMappingURL=header.css.map */

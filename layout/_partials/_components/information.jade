@@ -1,0 +1,13 @@
+.copyright
+    - var current = new Date();
+    - var year = current.getFullYear();
+    - year = year == theme.since ? year : theme.since + ' - ' + year;
+    p © 
+      span.footer-copyright-year #{year}
+      i.footer-copyright-within
+      span.footer-copyright-author
+        a(href=config.url)= config.author
+.powered-by Powered by
+  a(href="http://hexo.io") Hexo
+.theme-info Theme by
+  a(href="https://github.com/Phantr4x/hexo-theme-tw1nkle")= config.theme

@@ -1,0 +1,14 @@
+doctype html
+html(lang=config.language)
+  head
+    include _components/head
+  body
+    header
+      include _components/nav
+    section.container
+      block container
+    footer
+      block pagination
+      block information
+    include _components/scripts
+      

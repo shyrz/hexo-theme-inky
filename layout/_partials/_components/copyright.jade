@@ -1,0 +1,4 @@
+.copyright
+  - var year = date(Date.now(), "YYYY")
+  - year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
+  p © #{year} #[a(href=config.url)!= config.author], unless otherwise noted.
