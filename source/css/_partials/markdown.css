@@ -58,6 +58,10 @@
     font-size: 22px; }
   .post-content h4, .post-content h5, .post-content h6 {
     font-size: 18px; }
+  .post-content strong {
+    font-weight: bolder; }
+  .post-content em {
+    font-style: italic; }
   .post-content a {
     color: #190f05; }
     .post-content a:hover, .post-content a:active {

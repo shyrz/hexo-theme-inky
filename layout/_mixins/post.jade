@@ -9,7 +9,7 @@ mixin postSpecInfo(item)
 
 mixin postUpdate(item)
   .post-updated
-    != 'Updated ' + full_date(item.updated, 'ddd, ll')
+    != 'Updated on ' + full_date(item.updated, 'ddd, ll')
 
 
 //- Index Page
@@ -27,9 +27,34 @@ mixin postUpdate(item)
 //-           a.read-more(href= url_for(item.path))!= __('more')
 //-     - })
 
+mixin yearHans(year)
+  - var cyear = year.toString();
+  - var Hans = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  - var Arab = ['0','1','2','3','4','5','6','7','8','9'];
+  - for (var i = 0; i < cyear.length; i++) {
+    - for (var j = 0; j < Arab.length; j++) {
+      - if (cyear[i] == Arab[j]) {
+        - cyear = cyear.replace(cyear[i], Hans[j]);
+      - }
+    - }
+  - }
+  //- - cyear = cyear.replace(/0/g, "〇");
+  //- - cyear = cyear.replace(/1/g, "一");
+  //- - cyear = cyear.replace(/2/g, "二");
+  //- - cyear = cyear.replace(/3/g, "三");
+  //- - cyear = cyear.replace(/4/g, "四");
+  //- - cyear = cyear.replace(/5/g, "五");
+  //- - cyear = cyear.replace(/6/g, "六");
+  //- - cyear = cyear.replace(/7/g, "七");
+  //- - cyear = cyear.replace(/8/g, "八");
+  //- - cyear = cyear.replace(/9/g, "九");
+  span.archive-chinese-year!= cyear
+
+
 //- Archive Page
 mixin postList()
   .archive
+    h1.archive-title!= __('title.archive')
     - var year = 0;
     - var change = false;
     - page.posts.each(function (item) {
@@ -37,7 +62,9 @@ mixin postList()
       - change = year !== itemYear;
       - year = change ? itemYear : year;
       if change 
-        h2.archive-year!= year
+        h2.archive-year
+          +yearHans(year)
+          span.archive-arab-year!= year
       .post-item
         +postInfo(item)
         a.post-title-link(href= url_for(item.path))

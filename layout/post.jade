@@ -8,13 +8,19 @@ block description
     meta(name="description", content=desc)
 
 block container
-  include _mixins/post
-  +post(page)
+  if /^categories\//.test(page.path)
+    
+  else if /^tags\//.test(page.path)
+    
+  else
+    include _mixins/post
+    +post(page)
 
 block pagination
   include _mixins/paginator
   +post()
-  include _partials/_components/comment
+  if page.comments
+    include _partials/_components/comment
 
 block information
   include _partials/_components/information

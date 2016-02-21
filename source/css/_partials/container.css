@@ -74,23 +74,35 @@ h1.blog-title {
 .archive {
   padding: 36px 0; }
 
+h1.archive-title {
+  border-bottom: 2px solid #45290c;
+  margin-bottom: .5em;
+  font-size: 500%;
+  font-weight: 900;
+  letter-spacing: -.05em;
+  line-height: 1.2;
+  color: #45290c; }
+
 .archive h2.archive-year {
-  margin-top: 1em;
+  margin: 1em 0 .5em;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Source Sans Pro', "Microsoft Yahei", 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
+  letter-spacing: .05em;
   color: #877f6a; }
+  .archive h2.archive-year .archive-arab-year:before {
+    content: '・'; }
 
 .archive .post-item {
   position: relative;
   padding-left: 4em;
-  padding-right: 72px; }
+  padding-right: 54px; }
 
 .archive .post-time {
   position: absolute;
   right: 0;
-  top: 50%;
+  bottom: 7px;
   margin-top: -14px;
   color: #877f6a; }
 
@@ -111,7 +123,7 @@ h1.blog-title {
   color: #190f05;
   font-weight: 700;
   font-size: 240%; }
-.post-block .post-time {
+.post-block .post-time, .post-block .post-updated {
   color: #877f6a;
   margin: 1.2em 0; }
 
@@ -174,6 +186,10 @@ h1.blog-title {
     font-size: 22px; }
   .post-content h4, .post-content h5, .post-content h6 {
     font-size: 18px; }
+  .post-content strong {
+    font-weight: bolder; }
+  .post-content em {
+    font-style: italic; }
   .post-content a {
     color: #190f05; }
     .post-content a:hover, .post-content a:active {
@@ -374,5 +390,16 @@ pre {
   pre .xml .css,
   pre .xml .cdata {
     opacity: 0.5; }
+
+.paginator a.prev, .paginator a.next {
+  padding: 7px 14px;
+  margin: 0 14px;
+  border-radius: 4px;
+  border-bottom: 4px solid #190f05;
+  background: #704214;
+  letter-spacing: .05em;
+  color: #f3eacb; }
+  .paginator a.prev:hover, .paginator a.prev:active, .paginator a.next:hover, .paginator a.next:active {
+    background: #45290c; }
 
 /*# sourceMappingURL=container.css.map */

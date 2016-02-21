@@ -32,6 +32,12 @@
     h4, h5, h6 {
         font-size: 18px;
     }
+    strong {
+      font-weight: bolder;
+    }
+    em {
+      font-style: italic;
+    }
     a {
         color: $coffee-dark-2;
         &:hover, &:active {

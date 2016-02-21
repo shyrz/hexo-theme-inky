@@ -7,7 +7,11 @@
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, Tw1nkle"
 
-# Specify the date when the site was setup
+# Rss
+rss: /atom.xml
+
+# Copyright Information
+## Specify the date when the site was setup
 since: 2015
 
 # ---------------------------------------------------------------
@@ -17,15 +21,13 @@ since: 2015
 # When running hexo in a subdirectory (e.g. domain.tld/blog)
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
-  Home: /
-  # Categories: /categories
-  About: /about
-  Archive: /archives/
-  GitHub: https://github.com/Phantr4x
-  # Tags: /tags
+  home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  about: /about
+  rss: /atom.xml
   # Commonweal: /404.html
-  RSS: /atom.xml
-
 
 # Place your favicon to /source directory.
 favicon: favicon.png
@@ -33,6 +35,7 @@ logo: logo-512.png
 
 # Google fonts CDN
 googlefonts: false
+
 
 
 archive_generator:
@@ -46,6 +49,17 @@ archive_generator:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
+# Comment
+# e.g disqus: Phantr4x
+disqus: Phantr4x
+duoshuo:
+
+# Analytics
+# google-analytics:
+google_analytics:
+# baidu-analytics:
+baidu_analytics: //hm.baidu.com/hm.js?b41062d843f1043fb808af9b7f4e7dd6
+
 
 
 
@@ -53,18 +67,6 @@ archive_generator:
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
-
-# Motion
-# use_motion: true
-
-# Fancybox
-# fancybox: true
-
-# Static files
-vendors: vendors
-css: css
-js: js
-images: images
 
 # Theme version
 version: 0.1.0

@@ -1,0 +1,8 @@
+mixin categories()
+  .categories
+    h1.category-title!= __('title.cagetory')
+    ul.category-list
+      each value, key in site.categories
+        li.category-list-item
+          != value
+  
