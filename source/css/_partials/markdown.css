@@ -7,260 +7,289 @@
  ----------------------------------------------------------*/
 /* 字体
  ----------------------------------------------------------*/
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-SemiBold.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Heavy.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-SemiBold.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Heavy.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-SemiBold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: '台湾教育部隶书';
+  src: url("../fonts/臺灣教育部體/eduLi.ttf"); }
+
+@font-face {
+  font-family: '台湾教育部楷书';
+  src: url("../fonts/臺灣教育部體/eduKai.ttf"); }
+
+@font-face {
+  font-family: '台湾教育部宋体';
+  src: url("../fonts/臺灣教育部體/eduSong.ttf"); }
+
 /* 其他
  ----------------------------------------------------------*/
 ::-moz-selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::-webkit-selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 .post-content {
-  font-size: 16px; }
-  .post-content * {
-    color: #704214; }
-  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-    position: relative;
-    margin: 1em 0; }
-    .post-content h1:before, .post-content h2:before, .post-content h3:before, .post-content h4:before, .post-content h5:before, .post-content h6:before {
-      content: "#";
-      color: #45290c;
-      position: absolute;
-      left: -0.7em;
-      top: -4px;
-      font-size: 1.2em;
-      font-weight: bold; }
-  .post-content h1 {
-    font-size: 26px; }
-  .post-content h2, .post-content h3 {
-    font-size: 22px; }
-  .post-content h4, .post-content h5, .post-content h6 {
-    font-size: 18px; }
+  padding: 0 21px;
+  font-size: 16px;
+  line-height: 2; }
   .post-content strong {
-    font-weight: bolder; }
+    font-weight: 900; }
   .post-content em {
     font-style: italic; }
+  .post-content > p, .post-content > pre, .post-content > figure, .post-content > dl {
+    margin: 0 0 12px; }
   .post-content a {
-    color: #190f05; }
+    color: #B69676; }
     .post-content a:hover, .post-content a:active {
       text-decoration: underline; }
   .post-content blockquote {
-    margin: 2em 0;
-    padding-left: 20px;
-    border-left: 4px solid #45290c; }
+    margin: 18px 0 16px;
+    padding-left: 15px;
+    position: relative;
+    font-style: italic;
+    word-wrap: break-word;
+    border-left: 3px solid #B69676; }
   .post-content img {
     display: block;
     max-width: 100%;
-    margin: 1em auto; }
-  .post-content .tip {
+    margin: 0 auto;
+    border-radius: 3px; }
+  .post-content hr {
+    width: 50%;
+    margin: 30px auto;
+    border: none;
+    overflow: visible; }
+    .post-content hr:after {
+      content: '';
+      display: block;
+      border-top: 1px solid #E2E2E2;
+      margin: 0 3px;
+      position: relative;
+      top: 1px; }
+  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    display: flex;
+    align-items: center;
     position: relative;
-    margin: 2em 0;
-    padding: 12px 24px 12px 30px;
-    border-left: 4px solid #f66;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-color: #fdfbf4; }
-    .post-content .tip br {
-      display: none; }
-  .post-content .tip:before {
-    position: absolute;
-    top: 14px;
-    left: -12px;
-    content: "!";
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #f66;
-    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
-
-.post-content code {
-  color: #111111;
-  font-size: 0.8em;
-  font-family: 'Source Code Pro', 'Roboto Mono', Monaco, courier, monospace; }
-
-.post-content pre {
-  font-size: 0.8em;
-  background-color: #fdfbf4;
-  font-family: 'Source Code Pro', 'Roboto Mono', Monaco, courier, monospace; }
-
-.post-content .highlight {
-  position: relative;
-  margin: 1em 0;
-  border-radius: 2px;
-  line-height: 1.1em;
-  background-color: #fdfbf4;
-  overflow-x: auto; }
-  .post-content .highlight table, .post-content .highlight tr, .post-content .highlight td {
+    padding-left: 10px;
+    font-family: "源流明體", "GenRyuMin TW", "源流明體 TTF", Noto Serif TC, Noto Serif SC, serif;
+    font-weight: 700; }
+    .post-content h1 a.header-anchor, .post-content h2 a.header-anchor, .post-content h3 a.header-anchor, .post-content h4 a.header-anchor, .post-content h5 a.header-anchor, .post-content h6 a.header-anchor {
+      position: absolute;
+      left: -.35em;
+      margin-right: 4px;
+      text-decoration: none;
+      color: #B69676;
+      transform: scale(0.85);
+      opacity: 0.85; }
+    .post-content h1:hover a.header-anchor, .post-content h2:hover a.header-anchor, .post-content h3:hover a.header-anchor, .post-content h4:hover a.header-anchor, .post-content h5:hover a.header-anchor, .post-content h6:hover a.header-anchor {
+      opacity: 1; }
+  .post-content h1 {
+    margin: 21px 0 12px;
+    font-size: 32px; }
+  .post-content h2 {
+    margin: 21px 0 9px;
+    font-size: 28px; }
+  .post-content h3 {
+    margin: 18px 0 9px;
+    font-size: 24px; }
+  .post-content h4 {
+    margin: 18px 0 7px;
+    font-size: 20px; }
+  .post-content h5 {
+    margin: 15px 0 7px;
+    font-size: 16px; }
+  .post-content h6 {
+    margin: 15px 0 4px;
+    font-size: 12px; }
+  .post-content > table {
     width: 100%;
-    border-collapse: collapse;
-    padding: 0;
-    margin: 0; }
-  .post-content .highlight .gutter {
-    display: none; }
-  .post-content .highlight .code pre {
-    padding: 1.2em 1.4em;
-    line-height: 1.5em;
-    margin: 0; }
-
-.highlight.html .code:after, .highlight.js .code:after, .highlight.bash .code:after, .highlight.css .code:after, .highlight.scss .code:after, .highlight.diff .code:after, .highlight.java .code:after, .highlight.xml .code:after, .highlight.python .code:after, .highlight.json .code:after, .highlight.swift .code:after, .highlight.ruby .code:after, .highlight.perl .code:after, .highlight.php .code:after, .highlight.c .code:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #ccc;
-  text-align: right;
-  font-size: 0.75em;
-  padding: 5px 10px 0;
-  line-height: 15px;
-  height: 15px;
-  font-weight: 600; }
-
-.highlight.html .code:after {
-  content: "HTML"; }
-
-.highlight.js .code:after {
-  content: "JS"; }
-
-.highlight.bash .code:after {
-  content: "BASH"; }
-
-.highlight.css .code:after {
-  content: "CSS"; }
-
-.highlight.scss .code:after {
-  content: "SCSS"; }
-
-.highlight.diff .code:after {
-  content: "DIFF"; }
-
-.highlight.java .code:after {
-  content: "JAVA"; }
-
-.highlight.xml .code:after {
-  content: "XML"; }
-
-.highlight.python .code:after {
-  content: "PYTHON"; }
-
-.highlight.json .code:after {
-  content: "JSON"; }
-
-.highlight.swift .code:after {
-  content: "SWIFT"; }
-
-.highlight.ruby .code:after {
-  content: "RUBY"; }
-
-.highlight.perl .code:after {
-  content: "PERL"; }
-
-.highlight.php .code:after {
-  content: "PHP"; }
-
-.highlight.c .code:after {
-  content: "C"; }
-
-.highlight.java .code:after {
-  content: "JAVA"; }
-
-pre {
-  color: #525252; }
-  pre .function .keyword,
-  pre .constant {
-    color: #0092db; }
-  pre .keyword,
-  pre .attribute {
-    color: #e96900; }
-  pre .number,
-  pre .literal {
-    color: #ae81ff; }
-  pre .tag,
-  pre .tag .title,
-  pre .change,
-  pre .winutils,
-  pre .flow,
-  pre .lisp .title,
-  pre .clojure .built_in,
-  pre .nginx .title,
-  pre .tex .special {
-    color: #2973b7; }
-  pre .symbol,
-  pre .symbol .string,
-  pre .value,
-  pre .regexp {
-    color: #704214; }
-  pre .title {
-    color: #83B917; }
-  pre .tag .value,
-  pre .string,
-  pre .subst,
-  pre .haskell .type,
-  pre .preprocessor,
-  pre .ruby .class .parent,
-  pre .built_in,
-  pre .sql .aggregate,
-  pre .django .template_tag,
-  pre .django .variable,
-  pre .smalltalk .class,
-  pre .javadoc,
-  pre .django .filter .argument,
-  pre .smalltalk .localvars,
-  pre .smalltalk .array,
-  pre .attr_selector,
-  pre .pseudo,
-  pre .addition,
-  pre .stream,
-  pre .envvar,
-  pre .apache .tag,
-  pre .apache .cbracket,
-  pre .tex .command,
-  pre .prompt {
-    color: #704214; }
-  pre .comment,
-  pre .java .annotation,
-  pre .python .decorator,
-  pre .template_comment,
-  pre .pi,
-  pre .doctype,
-  pre .shebang,
-  pre .apache .sqbracket,
-  pre .tex .formula {
-    color: #b3b3b3; }
-  pre .deletion {
-    color: #BA4545; }
-  pre .coffeescript .javascript,
-  pre .javascript .xml,
-  pre .tex .formula,
-  pre .xml .javascript,
-  pre .xml .vbscript,
-  pre .xml .css,
-  pre .xml .cdata {
-    opacity: 0.5; }
-
-/*# sourceMappingURL=markdown.css.map */
+    max-width: 100%;
+    margin: 0 auto 12px;
+    border-collapse: collapse; }
+    .post-content > table thead {
+      background: #F9F7F4; }
+    .post-content > table thead th, .post-content > table thead td, .post-content > table tbody th, .post-content > table tbody td {
+      padding: 3px 5px; }
+    .post-content > table thead th, .post-content > table tbody th {
+      color: #B69676;
+      font-weight: 700;
+      border-bottom: 2px solid #B69676; }
+    .post-content > table thead td, .post-content > table tbody td {
+      border-top: 1px solid #B69676; }
+  .post-content > p > code {
+    box-sizing: border-box;
+    margin: 0 2px;
+    padding: 2px 4px;
+    border: 1px solid #B69676;
+    border-radius: 3px;
+    background: #F9F7F4;
+    font-family: "Fira Mono", "Fira Code", "Source Code Pro", "Roboto Mono", Monaco, courier, monospace;
+    font-size: 0.9em;
+    color: #3B2D23; }
+  .post-content > pre {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #B69676;
+    border-radius: 3px;
+    background: #F9F7F4;
+    line-height: 1.5; }
+    .post-content > pre > code {
+      background: transparent;
+      font-family: "Fira Mono", "Fira Code", "Source Code Pro", "Roboto Mono", Monaco, courier, monospace; }
+  .post-content figure.highlight {
+    line-height: 1.5; }
+    .post-content figure.highlight table {
+      width: 100%;
+      border: 1px solid #B69676;
+      border-radius: 3px;
+      background: #F9F7F4; }
+      .post-content figure.highlight table pre {
+        margin: 0; }
+      .post-content figure.highlight table td.gutter {
+        width: 31px;
+        border-right: 1px solid #B69676;
+        text-align: center; }
+        .post-content figure.highlight table td.gutter pre {
+          color: #B69676; }
+    .post-content figure.highlight .hljs {
+      background: transparent;
+      font-family: "Fira Mono", "Fira Code", "Source Code Pro", "Roboto Mono", Monaco, courier, monospace;
+      color: #0A0A0A; }
+  .post-content mark {
+    padding: 0 3px;
+    background-color: #F1EAE4;
+    color: #0A0A0A; }
+  .post-content abbr {
+    margin: 0 2px;
+    padding: 2px 4px;
+    border: 1px dashed #B69676;
+    border-radius: 3px;
+    font-size: 0.9em;
+    text-decoration: none;
+    background: #F9F7F4;
+    cursor: pointer; }
+  .post-content dl dt {
+    font-weight: 700; }
+  .post-content kbd {
+    display: inline-block;
+    margin: 0 1px;
+    padding: 1px 4px;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    background: #FFFFFF;
+    font: 11px "Fira Mono", "Fira Code", "Source Code Pro", "Roboto Mono", Monaco, courier, monospace;
+    color: #0A0A0A;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 #FFFFFF;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #FFFFFF inset; }

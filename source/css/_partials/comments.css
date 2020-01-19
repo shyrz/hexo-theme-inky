@@ -1,0 +1,7 @@
+#comments {
+  box-sizing: border-box;
+  padding: 0 21px; }
+
+@media screen and (min-width: 732px) {
+  #comments {
+    width: 732px; } }

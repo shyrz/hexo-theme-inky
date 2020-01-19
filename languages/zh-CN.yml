@@ -1,0 +1,21 @@
+main:
+  home: '首页'
+  archives: '归档'
+  categories: '分类'
+  tags: '标签'
+  rss: 'RSS'
+  share: '分享'
+  comment: '评论'
+
+page:
+  prev: '上一篇'
+  next: '下一篇'
+  prev_post: '上一篇'
+  next_post: '下一篇'
+  category_count: '%d 篇'
+  tag_count: '%d 篇'
+  archive_count: '%d 篇'
+  more: '...更多'
+  date: '发布于'
+  updated: '更新于'
+  comment_disable: '当前内容已禁用评论...'

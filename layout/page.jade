@@ -1,3 +1,4 @@
+//- page.jade
 extends _partials/layout
 
 block site-title
@@ -8,11 +9,13 @@ block description
   meta(name="description", content=desc)
 
 block container
-  //- if /^categories\//.test(page.path)
-  //- else if /^tags\//.test(page.path)
-  //- else
-  include mixins
-  +post(page)
+  if /^categories\//.test(page.path)
+    
+  else if /^tags\//.test(page.path)
+    
+  else
+    include mixins
+    +page(page)
 
 block paginator
   #paginator
@@ -21,8 +24,11 @@ block paginator
 
 block comments
   #comments
-    if page.comments
-      include _partials/_components/comments
+    if !is_home()
+      if page.comments
+        include _partials/_components/comments
+      else
+        p= __('page.comment_disable')
 
 block footer
   include _partials/_components/footer

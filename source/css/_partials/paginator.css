@@ -1,0 +1,7 @@
+#paginator {
+  margin: 0 auto; }
+
+@media screen and (min-width: 732px) {
+  #paginator {
+    width: 732px;
+    margin: 0 auto; } }

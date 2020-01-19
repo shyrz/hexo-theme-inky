@@ -1,0 +1,18 @@
+//- category.jade
+extends _partials/layout
+
+block site-title
+  != __('main.categories') + " · " + config.title
+
+block container
+  .categories
+    h2.categories-banner!= __('main.categories')
+    include mixins
+    +categoryList()
+  
+block paginator
+  include mixins
+  +paginator(true)
+
+block footer
+  include _partials/_components/footer

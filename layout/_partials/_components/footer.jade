@@ -1,0 +1,24 @@
+.footer-wrapper
+  - var tar = /^(http|https):\/\/*/gi.test(value) ? "_blank" : "_self"
+  .powered-by Proudly published by
+    a(href="https://hexo.io") Hexo
+  .theme Theme
+    a(href="https://github.com/sh7me/hexo-theme-inky") Inky
+    span by
+    a(href="https://github.com/sh7me") Sh7me
+  .more
+    p ✪
+      - if (config.plugin.some(plugin => plugin == 'hexo-generator-feed'))
+        - const feedPath = config.feed.path ? config.feed.path : 'atom.xml'
+        a.more-rss(href= config.root + feedPath target=tar)!= __('main.rss')
+  .copyright
+    - var current = new Date();
+    - var year = current.getFullYear();
+    - year = year == theme.since ? year : theme.since + ' - ' + year;
+    p © 
+      span.footer-copyright-year #{year}
+      i.footer-copyright-within
+      span.footer-copyright-author
+        a(href=config.url)= config.title
+  
+    

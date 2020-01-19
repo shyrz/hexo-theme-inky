@@ -1,233 +1,324 @@
 @charset "UTF-8";
 
-@import './_variables/_variable.scss';
+@import '../_variable';
 
 .post-content {
-    font-size: 16px;
-    * {
-      color: $coffee;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        position: relative;
-        margin: 1em 0;
-        &:before {
-            content: "#";
-            color: $coffee-dark-1;
-            position: absolute;
-            left: -0.7em;
-            top: -4px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    }
+	padding: 0 21px;
+	font-size: 16px;
+	line-height: 2;
+	// * {
+	//   color: $inky-black;
+	// }
+	// h1, h2, h3, h4, h5, h6 {
+	// 	position: relative;
+	// 	// margin: 1em 0;
+	// 	font-family: $inky-font-serif;
+	// 	font-weight: 700;
+	// 	&:before {
+	// 		content: "#";
+	// 		// font-family: $inky-font-sans;
+	// 		color: $inky-coffee-2;
+			
+	// 		position: absolute;
+	// 		left: -0.7em;
+	// 		height: 100%;
+	// 		vertical-align: middle;
+	// 		font-size: 1.2em;
+	// 		font-weight: bold;
+	// 	}
+	// }
 
-    h1 {
-      font-size: 26px;
-    }
+	strong {
+	  font-weight: 900;
+	}
 
-    h2, h3 {
-        font-size: 22px;
-    }
+	em {
+	  font-style: italic;
+	}
 
-    h4, h5, h6 {
-        font-size: 18px;
-    }
-    strong {
-      font-weight: bolder;
-    }
-    em {
-      font-style: italic;
-    }
-    a {
-        color: $coffee-dark-2;
-        &:hover, &:active {
-          text-decoration: underline;
-        }
-    }
-    blockquote {
-        margin: 2em 0;
-        padding-left: 20px;
-        border-left: 4px solid $coffee-dark-1;
-    }
-    img {
-        display: block;
-        max-width: 100%;
-        margin: 1em auto;
-    }
-    .tip {
-        position: relative;
-        margin: 2em 0;
-        padding: 12px 24px 12px 30px;
-        border-left: 4px solid #f66;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-        background-color: $coffee-light-6;
-        br {
-            display: none;
-        }
-    }
-    .tip:before {
-        position: absolute;
-        top: 14px;
-        left: -12px;
-        content: "!";
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        color: #fff;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: bold;
-        text-align: center;
-        background-color: #f66;
-        font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-    }
-}
+	> p, > pre, > figure, > dl {
+    margin: 0 0 12px;
+  }
 
-.post-content code {
-  color: $black;
-  font-size: 0.8em;
-  font-family: 'Source Code Pro', 'Roboto Mono', Monaco, courier, monospace;
-}
+	a {
+		color: $inky-gold;
+		// transition: color .2s;
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
 
-.post-content pre {
-  font-size: 0.8em;
-  background-color: $coffee-light-6;
-  font-family: 'Source Code Pro', 'Roboto Mono', Monaco, courier, monospace;
-}
-
-
-
-.post-content .highlight {
+	blockquote {
+		// margin: 2em 0;
+		// padding-left: 20px;
+		margin: 18px 0 16px;
+    padding-left: 15px;
     position: relative;
-    margin: 1em 0;
-    border-radius: 2px;
-    line-height: 1.1em;
-    background-color: $coffee-light-6;
-    overflow-x: auto;
-    table, tr, td {
-        width: 100%;
-        border-collapse: collapse;
-        padding: 0;
-        margin: 0;
-    }
-    .gutter {
-        display: none;
-    }
-    .code pre {
-        padding: 1.2em 1.4em;
-        line-height: 1.5em;
-        margin: 0;
-    }
-}
+    font-style: italic;
+		word-wrap: break-word;
+		border-left: 3px solid $inky-gold;
+	}
 
-%code-base {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #ccc;
-    text-align: right;
-    font-size: 0.75em;
-    padding: 5px 10px 0;
-    line-height: 15px;
-    height: 15px;
-    font-weight: 600;
-}
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		// border: 1px solid $inky-gold;
+		border-radius: 3px;
+	}
 
-@mixin code-signs($keys) {
-    @each $key in $keys {
-        .highlight.#{$key} .code:after {
-            content: to-upper-case($key);
-            @extend %code-base;
-        }
-    }
-}
- // "ruby", "perl", "php", "c++", "c", "java"
+	hr {
+		width: 50%;
+		margin: 30px auto;
+		border: none;
+		overflow: visible;
+		&:after {
+			content: '';
+			display: block;
+			border-top: 1px solid $inky-line-color;
+			margin: 0 3px;
+			position: relative;
+			top: 1px;
+		}
+	}
 
-$signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "json", "swift", "ruby", "perl", "php", "c", "java");
-@include code-signs($signs);
+	h1, h2, h3, h4, h5, h6 {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding-left: 10px;
+		font-family: $inky-font-serif;
+		font-weight: 700;
 
-pre {
-    color: #525252;
-    .function .keyword,
-    .constant {
-       color: #0092db;
-    }
-    .keyword,
-    .attribute {
-        color: #e96900;
-    }
-    .number,
-    .literal {
-        color: #ae81ff;
-    }
-    .tag,
-    .tag .title,
-    .change,
-    .winutils,
-    .flow,
-    .lisp .title,
-    .clojure .built_in,
-    .nginx .title,
-    .tex .special {
-        color: #2973b7;
-    }
-    .symbol,
-    .symbol .string,
-    .value,
-    .regexp {
-        color: $coffee;
-    }
-    .title {
-        color: #83B917;
-    }
-    .tag .value,
-    .string,
-    .subst,
-    .haskell .type,
-    .preprocessor,
-    .ruby .class .parent,
-    .built_in,
-    .sql .aggregate,
-    .django .template_tag,
-    .django .variable,
-    .smalltalk .class,
-    .javadoc,
-    .django .filter .argument,
-    .smalltalk .localvars,
-    .smalltalk .array,
-    .attr_selector,
-    .pseudo,
-    .addition,
-    .stream,
-    .envvar,
-    .apache .tag,
-    .apache .cbracket,
-    .tex .command,
-    .prompt {
-        color: $coffee;
-    }
-    .comment,
-    .java .annotation,
-    .python .decorator,
-    .template_comment,
-    .pi,
-    .doctype,
-    .shebang,
-    .apache .sqbracket,
-    .tex .formula {
-        color: #b3b3b3;
-    }
-    .deletion {
-        color: #BA4545;
-    }
-    .coffeescript .javascript,
-    .javascript .xml,
-    .tex .formula,
-    .xml .javascript,
-    .xml .vbscript,
-    .xml .css,
-    .xml .cdata {
-        opacity: 0.5;
-    }
+		a.header-anchor {
+			position: absolute;
+			left: -.35em;
+			margin-right: 4px;
+			text-decoration: none;
+			color: $inky-gold;
+			transform: scale(0.85);
+			opacity: 0.85;
+			// transition: opacity .2s ease-in-out;
+		}
+		&:hover a.header-anchor {
+			opacity: 1;
+		}
+	}
+
+	h1 {
+		margin: 21px 0 12px;
+		font-size: 32px;
+		// font-size: 2em;
+	}
+	h2 {
+		margin: 21px 0 9px;
+		font-size: 28px;
+		// font-size: 1.5em;
+	}
+	h3 {
+		margin: 18px 0 9px;
+		font-size: 24px;
+		// font-size: 1.17em;
+	}
+	h4 {
+		margin: 18px 0 7px;
+		font-size: 20px;
+		// font-size: 1em;
+	}
+	h5 {
+		margin: 15px 0 7px;
+		font-size: 16px;
+		// font-size: 0.83em;
+	}
+	h6 {
+		margin: 15px 0 4px;
+		font-size: 12px;
+		// font-size: 0.67em;
+	}
+
+	
+
+	// ol, ul {
+	// 	box-sizing: border-box;
+	// 	margin: 0 21px;
+	// 	padding: 0 21px;
+	// }
+
+	// ul {
+	// 	// list-style: none;
+	// }
+
+	> table {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto 12px;
+		border-collapse: collapse;
+		// border: 1px solid $inky-gold;
+		// border-radius: 3px;
+
+		thead {
+			background: $inky-gold-background;
+		}
+		thead, tbody {
+			th, td {
+				padding: 3px 5px;
+				// border: 1px solid $inky-gold;
+			}
+			th {
+				color: $inky-gold;
+				font-weight: 700;
+				border-bottom: 2px solid $inky-gold;
+			}
+			td {
+				border-top: 1px solid $inky-gold;
+			}
+		}
+	}
+
+	
+
+	// .tip {
+	// 	position: relative;
+	// 	margin: 2em 0;
+	// 	padding: 12px 24px 12px 30px;
+	// 	border-left: 4px solid #f66;
+	// 	border-top-right-radius: 2px;
+	// 	border-bottom-right-radius: 2px;
+	// 	background-color: $inky-black-l25;
+	// 	br {
+	// 		display: none;
+	// 	}
+	// }
+	// .tip:before {
+	// 	position: absolute;
+	// 	top: 14px;
+	// 	left: -12px;
+	// 	content: "!";
+	// 	width: 20px;
+	// 	height: 20px;
+	// 	border-radius: 100%;
+	// 	color: #fff;
+	// 	font-size: 14px;
+	// 	line-height: 20px;
+	// 	font-weight: bold;
+	// 	text-align: center;
+	// 	background-color: #f66;
+	// 	font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+	// }
+
+	// ---------------------------------------------------------------
+	// Code
+	// ---------------------------------------------------------------
+	> p > code {
+		box-sizing: border-box;
+		margin: 0 2px;
+		padding: 2px 4px;
+		border: 1px solid $inky-gold;
+		border-radius: 3px;
+		background: $inky-gold-background;
+		font-family: $inky-font-code;
+		font-size: 0.9em;
+		color: $inky-coffee-0;
+	}
+
+	> pre {
+		box-sizing: border-box;
+		// padding: 0 8px;
+		padding: 10px;
+		border: 1px solid $inky-gold;
+		border-radius: 3px;
+		background: $inky-gold-background;
+		line-height: 1.5;
+		
+		> code {
+			background: transparent;
+			font-family: $inky-font-code;
+		}
+	}
+
+	figure.highlight {
+		line-height: 1.5;
+		table {
+			width: 100%;
+			border: 1px solid $inky-gold;
+			border-radius: 3px;
+			background: $inky-gold-background;
+			pre {
+				margin: 0;
+			}
+			td.gutter {
+				width: 31px;
+				border-right: 1px solid $inky-gold;
+				text-align: center;
+				pre {
+					color: $inky-gold;
+				}
+			}
+			td.code {}
+		}
+		.hljs {
+			background: transparent;
+			font-family: $inky-font-code;
+			color: $inky-black;
+		}
+	}
+
+	// ---------------------------------------------------------------
+	// Mark
+	// ---------------------------------------------------------------
+
+	mark {
+		padding: 0 3px;
+		background-color: $inky-gold-mark;
+		color: $inky-black;
+	}
+
+	// ---------------------------------------------------------------
+	// Mark
+	// ---------------------------------------------------------------
+
+	abbr {
+		margin: 0 2px;
+		padding: 2px 4px;
+		border: 1px dashed $inky-gold;
+		border-radius: 3px;
+		font-size: 0.9em;
+		text-decoration: none;
+		background: $inky-gold-background;
+		cursor: pointer;
+	}
+
+	// ---------------------------------------------------------------
+	// Definition List
+	// ---------------------------------------------------------------
+	dl {
+		dt {
+			font-weight: 700;
+		}
+		dd {
+			// pre {
+			// 	border: 1px solid $inky-gold;
+			// 	border-radius: 3px;
+			// 	background: $inky-gold-background;
+			// }
+		}
+	}
+
+
+	// ---------------------------------------------------------------
+	// KBD
+	// ---------------------------------------------------------------
+	kbd {
+		display: inline-block;
+		margin: 0 1px;
+		padding: 1px 4px;
+		border: 1px solid $inky-line-color;
+		border-radius: 3px;
+		background: $inky-white;
+		font: 11px $inky-font-code;
+		color: $inky-black;
+		line-height: 1.4;
+		text-shadow: 0 1px 0 $inky-white;
+		box-shadow: 0 2px 0 rgba(0,0,0,.2), 0 1px 0 $inky-white inset;
+	}
 }

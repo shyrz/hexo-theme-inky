@@ -1,1 +1,14 @@
 extends _partials/layout
+
+block container
+  .tags
+    h2.tags-banner
+      a.tags-link(href= config.root + config.category_dir)= __('main.tags')
+      span= ` / ${page.tag}`
+    include mixins
+    +tag()
+  
+block paginator
+
+block footer
+  include _partials/_components/footer

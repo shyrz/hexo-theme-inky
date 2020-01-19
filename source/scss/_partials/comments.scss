@@ -1,0 +1,47 @@
+#comments {
+  box-sizing: border-box;
+  padding: 0 21px;
+}
+@media screen and (min-width: 732px) {
+  #comments {
+    width: 732px;
+  }
+}
+
+// #vcomments {
+//   textarea#veditor {
+//     ::placeholder {
+//       content: "Comments...";
+//     }
+//   }
+// }
+
+// Gitalk
+#gitalk-container {
+  a,
+  a.gt-link-counts,
+  a.gt-header-controls-tip,
+  a.gt-comment-username {
+    color: $inky-gold!important;
+  }
+  a.gt-link {
+    border-bottom: 1px dotted $inky-gold!important;
+  }
+  .gt-btn-login {
+    border-color: $inky-gold!important;
+    background-color: $inky-gold!important;
+  }
+  .gt-btn-preview {
+    border-color: $inky-gold!important;
+    color: $inky-gold!important;
+  }
+
+  .gt-comment-content {
+    background: $inky-gold-background!important;
+  }
+
+  svg,
+  .gt-svg {
+    fill: $inky-gold!important;
+  }
+}

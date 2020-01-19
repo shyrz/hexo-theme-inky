@@ -2,10 +2,15 @@
 extends _partials/layout
 
 block container
-  include _mixins/categories
-  +categories()
+  .categories
+    h2.categories-banner
+      a.categories-link(href= config.root + config.category_dir)= __('main.categories')
+      span= ` / ${page.category}`
+    //- - console.log(page)
+    include mixins
+    +category()
   
-block pagination
+block paginator
 
-block information
-  include _partials/_components/information
+block footer
+  include _partials/_components/footer

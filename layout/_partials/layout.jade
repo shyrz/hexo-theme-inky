@@ -1,14 +1,19 @@
-doctype html
+doctype
 html(lang=config.language)
   head
     include _components/head
   body
-    header
+    #topbar
+      .topbar-wrapper
+    header#header
       include _components/nav
-    section.container
-      block container
-    footer
-      block pagination
-      block information
+    #container
+      #content
+        block container
+        block paginator
+        block comments
+    footer#footer
+      block footer
+    
     include _components/scripts
       

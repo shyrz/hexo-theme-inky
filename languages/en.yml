@@ -1,6 +1,14 @@
+title:
+  archive: 'Archives'
+  category: 'Categories'
+  tag: 'Tags'
+  share: 'Share'
+  comment: 'Comments'
+
 paginator:
-  prev: PREV
-  next: NEXT
-  prev-post: "Older Post"
-  next-post: "Later Post"
-  more: ...MORE
+  prev: 'PREV'
+  next: 'NEXT'
+  prev_post: 'OLDER POST'
+  next_post: 'LATER POST'
+  more: '...More'
+  comment_disable: 'Comments have been disabled for this content'

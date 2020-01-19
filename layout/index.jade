@@ -2,4 +2,21 @@
 extends _partials/layout
 
 block container
-  include _partials/_components/logo
+  .index
+    ul.index-list
+      - page.posts.each(item => {
+          //- - console.log(item)
+          li.index-item-wrapper
+            a.index-item(href= url_for(item.path))
+              .index-item-info-wrapper
+                h2.index-item-info= item.title
+                span.index-item-time!= `${full_date(item.date, 'YYYY-MM-DD')}`
+              //- if page.cover
+              //-   img(src= url_for(page.cover) loading= 'lazy' alt='cover')
+            //- if item.excerpt !== ''
+            //-   .index-item-excerpt
+            //-     != item.excerpt
+      - })
+
+block footer
+  include _partials/_components/footer

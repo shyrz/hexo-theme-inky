@@ -1,0 +1,17 @@
+extends _partials/layout
+
+block site-title
+  != __('main.tags') + " · " + config.title
+
+block container
+  .tags
+    h2.tags-banner!= __('main.tags')
+    include mixins
+    +tagList()
+  
+block paginator
+  include mixins
+  +paginator(true)
+
+block footer
+  include _partials/_components/footer

@@ -8,15 +8,27 @@ title
 block description
   meta(name="description", content= config.description ? config.description : 'A Blog Powered By Hexo')
 
-
 meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="short icon", type="image/png", href=url_for(theme.favicon), sizes="128x128")
+
+//- Highlight
+link(rel="stylesheet", href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css")
+script(src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js")
+
+//- Comments
+if theme.gitalk && theme.gitalk.enable
+  link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css")
+  script(src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js")
+if theme.valine && theme.valine.enable
+  script(src="//unpkg.com/valine/dist/Valine.min.js")
+
 
 link(rel="stylesheet", href=url_for("css/main.css"))
 
 //- link(rel="stylesheet", href="http://kevinburke.bitbucket.org/markdowncss/markdown.css")
 
-if theme.googlefonts
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type='text/css')
-else 
-    link(rel="stylesheet", href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type='text/css')
+//- if theme.googlefonts
+//-   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type='text/css')
+//- else 
+//-   link(rel="stylesheet", href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type='text/css')
+

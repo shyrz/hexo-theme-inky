@@ -1,0 +1,21 @@
+main:
+  home: '首頁'
+  archives: '歸檔'
+  categories: '分類'
+  tags: '標籤'
+  rss: 'RSS'
+  share: '分享'
+  comment: '評論'
+
+page:
+  prev: '上一篇'
+  next: '下一篇'
+  prev_post: '上一篇'
+  next_post: '下一篇'
+  category_count: '%d 篇'
+  tag_count: '%d 篇'
+  archive_count: '%d 篇'
+  more: '...更多'
+  date: '發布於'
+  updated: '更新於'
+  comment_disable: '當前內容已禁用評論...'

@@ -7,72 +7,206 @@
  ----------------------------------------------------------*/
 /* 字体
  ----------------------------------------------------------*/
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-SemiBold.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: '源樣明體';
+  src: url("../fonts/源樣明體/GenYoMinTW-Heavy.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-SemiBold.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: '源流明體';
+  src: url("../fonts/源流明體/GenRyuMinTW-Heavy.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: '源雲明體';
+  src: url("../fonts/源雲明體/GenWanMinTW-SemiBold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: '台湾教育部隶书';
+  src: url("../fonts/臺灣教育部體/eduLi.ttf"); }
+
+@font-face {
+  font-family: '台湾教育部楷书';
+  src: url("../fonts/臺灣教育部體/eduKai.ttf"); }
+
+@font-face {
+  font-family: '台湾教育部宋体';
+  src: url("../fonts/臺灣教育部體/eduSong.ttf"); }
+
 /* 其他
  ----------------------------------------------------------*/
 ::-moz-selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::-webkit-selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::selection {
-  color: #f3eacb;
-  background: #704214; }
+  color: #FFFFFF;
+  background: #0A0A0A; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #afa790; }
+  color: #0A0A0A; }
 
 /* 圆角
  --------------------------------------------------*/
 /* Font
  --------------------------------------------------*/
-header .nav-list-item {
-  display: inline-block;
-  padding: 19px 10px; }
+header * {
+  margin: 0;
+  padding: 0; }
 
-header ul.nav.nav-list {
-  display: block;
-  min-width: 270px;
-  text-align: center; }
+header ol, header ul {
+  list-style: none;
+  padding: 0; }
 
-header .nav-list-item a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #73553c;
-  line-height: 1.4;
-  border-bottom: 2px solid transparent;
-  transition: .2s ease-in-out; }
+@media screen and (min-width: 732px) {
+  header {
+    position: fixed;
+    top: 0;
+    height: calc(100vh - 111px);
+    width: calc((100vw - 800px) / 2);
+    padding-top: 10px;
+    text-align: right;
+    font-family: "源樣明體", "GenYoMin TW", "源樣明體 TTF";
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column; } }
 
-a.nav-list-link.active, a.nav-list-link:hover {
-  border-bottom: 2px solid #704214; }
+ul.nav.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around; }
 
-@media screen and (min-width: 700px) {
-  body {
-    width: 700px;
-    margin: 0 auto; } }
-@media screen and (max-width: 360px) {
-  body {
-    width: 100%; }
-
-  header .nav-list-item {
-    padding: 18px 5px; }
-
-  header .nav-list-item a {
-    letter-spacing: -.06em; } }
-
-/*# sourceMappingURL=header.css.map */
+li.nav-list-item {
+  position: relative;
+  width: 100%;
+  background: transparent; }
+  li.nav-list-item a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 12px;
+    padding-right: 36px;
+    font-family: "源樣明體", "GenYoMin TW", "源樣明體 TTF";
+    font-size: 20px;
+    font-weight: 700;
+    color: #0A0A0A;
+    line-height: 48px;
+    text-align: right;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 999; }
+    li.nav-list-item a.active, li.nav-list-item a:hover {
+      font-weight: 900; }
+  li.nav-list-item a.home-link {
+    height: auto;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 36px;
+    font-weight: 900; }
+    li.nav-list-item a.home-link h1.home-title {
+      font-family: "源樣明體", "GenYoMin TW", "源樣明體 TTF";
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1.4; }
+    li.nav-list-item a.home-link p.home-subtitle {
+      margin-top: 12px;
+      font-family: "源樣明體", "GenYoMin TW", "源樣明體 TTF";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2; }

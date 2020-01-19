@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* 路径
+ ----------------------------------------------------------*/
+
+
+/* 配色
+ ----------------------------------------------------------*/
+// theme
+
+$inky-black: #0A0A0A;
+$inky-white: #FFFFFF;
+
+$inky-black-l05: lighten($inky-black, 5%);
+$inky-black-l10: lighten($inky-black, 10%);
+$inky-black-l15: lighten($inky-black, 15%);
+$inky-black-l20: lighten($inky-black, 20%);
+$inky-black-l25: lighten($inky-black, 25%);
+$inky-black-l30: lighten($inky-black, 30%);
+$inky-black-l35: lighten($inky-black, 35%);
+$inky-black-l40: lighten($inky-black, 40%);
+$inky-black-l45: lighten($inky-black, 45%);
+$inky-black-l50: lighten($inky-black, 50%);
+
+// $inky-gold: #C7AD7A;
+$inky-gold: #B69676;
+// $inky-gold-mark: #DECEB0;
+$inky-gold-mark: #F1EAE4;
+// $inky-gold-background: #FCFAF8;
+$inky-gold-background: #F9F7F4;
+
+$inky-coffee-0: #3B2D23;
+$inky-coffee-1: #654634;
+// $inky-coffee-2: #624B44;
+$inky-coffee-2: #74594A;
+$inky-coffee-3: #856452;
+$inky-coffee-4: #B19A8A;
+
+
+// $inky-line-background: #c9cdd1;
+$inky-line-color: #E2E2E2;
+$inky-code-background: #F8F6F5;
+
+
+/* 布局
+ ----------------------------------------------------------*/
+
+
+/* 字体
+ ----------------------------------------------------------*/
+
+// ---------------------------------------------------------------
+// 源樣明體
+// ---------------------------------------------------------------
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoTW-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-SemiBold.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: '源樣明體';
+  src: url('../fonts/源樣明體/GenYoMinTW-Heavy.ttf');
+  font-weight: 900;
+}
+
+// ---------------------------------------------------------------
+// 源流明體
+// ---------------------------------------------------------------
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-SemiBold.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url('../fonts/源流明體/GenRyuMinTW-Heavy.ttf');
+  font-weight: 900;
+}
+
+// ---------------------------------------------------------------
+// 源雲明體
+// ---------------------------------------------------------------
+
+@font-face {
+  font-family: '源雲明體';
+  src: url('../fonts/源雲明體/GenWanMinTW-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: '源雲明體';
+  src: url('../fonts/源雲明體/GenWanMinTW-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: '源雲明體';
+  src: url('../fonts/源雲明體/GenWanMinTW-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: '源雲明體';
+  src: url('../fonts/源雲明體/GenWanMinTW-SemiBold.ttf');
+  font-weight: 600;
+}
+
+// ---------------------------------------------------------------
+// 源界明朝
+// ---------------------------------------------------------------
+
+
+// @font-face {
+//   font-family: '源界明朝';
+//   src: url('../fonts/源界明朝/OradanoGSRR.ttf')
+// }
+
+// ---------------------------------------------------------------
+// 臺灣教育部字型
+// ---------------------------------------------------------------
+
+
+@font-face {
+  font-family: '台湾教育部隶书';
+  src: url('../fonts/臺灣教育部體/eduLi.ttf');
+}
+
+@font-face {
+  font-family: '台湾教育部楷书';
+  src: url('../fonts/臺灣教育部體/eduKai.ttf');
+}
+
+@font-face {
+  font-family: '台湾教育部宋体';
+  src: url('../fonts/臺灣教育部體/eduSong.ttf');
+}
+
+// @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+
+$inky-font-serif: '源流明體', 'GenRyuMin TW', '源流明體 TTF', Noto Serif TC, Noto Serif SC, serif;
+$inky-font-sans: PingFang TC, PingFang SC, Lato, Helvetica Neue, Arial, sans-serif;
+$inky-font-code: 'Fira Mono', 'Fira Code', 'Source Code Pro', 'Roboto Mono', Monaco, courier, monospace;
+$inky-font-title: '源樣明體', 'GenYoMin TW', '源樣明體 TTF';
+$inky-font-alter: '源雲明體', 'GenWanMin TW', '源雲明體 TTF';
+// $inky-font-oradano: '源界明朝', 'OrdanoGSRR';
+$inky-font-edu-li: '台湾教育部隶书', '臺灣教育部國字隸書', '臺灣教育部標準隸書';
+$inky-font-edu-kai: '台湾教育部楷书', '臺灣教育部楷書';
+$inky-font-edu-song: '台湾教育部宋体', '臺灣教育部標準宋體';
+// $inky-font-latin: 'IM Fell Great Primer SC';
+
+
+
+
+/* 其他
+ ----------------------------------------------------------*/
+
+// Selection
+::-moz-selection {
+	color: $inky-white;
+  background: $inky-black;
+}
+::-webkit-selection {
+	color: $inky-white;
+  background: $inky-black;
+}
+::selection {
+	color: $inky-white;
+  background: $inky-black;
+}
+
+
+// Placeholder
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $inky-black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $inky-black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $inky-black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: $inky-black;
+}

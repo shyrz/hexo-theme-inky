@@ -1,6 +1,25 @@
 ul.nav.nav-list
-    each value, key in theme.menu
-        li.nav-list-item
-            - var tar = /^(http|https):\/\/*/gi.test(value) ? "_blank" : "_self"
-            a.nav-list-link(class={active: is_home() && value === "/"} href=value target=tar)
-                != key.toUpperCase()
+	- var tar = /^(http|https):\/\/*/gi.test(value) ? "_blank" : "_self"
+	li.nav-list-item(class= is_home() ? 'active' : '')
+		a.nav-list-link.home-link(class={active: is_home()} href=config.url target=tar)
+			h1.home-title= config.title
+			p.home-subtitle= config.subtitle
+	if theme.archives
+		li.nav-list-item(class= is_current('archives') ? 'active' : '')
+			a.nav-list-link(class={active: is_current('archives')} href= config.root + config.archive_dir target=tar)!= __('main.archives')
+	if theme.categories
+		li.nav-list-item(class= is_current('categories') ? 'active' : '')
+			a.nav-list-link(class={active: is_current('categories')} href= config.root + config.category_dir target=tar)!= __('main.categories')
+	if theme.tags
+		li.nav-list-item(class= is_current('tags') ? 'active' : '')
+			a.nav-list-link(class={active: is_current('tags')} href= config.root + config.tag_dir target=tar)!= __('main.tags')
+	if site.pages
+		- site.pages.each(page => {
+			//- - console.log(page)
+			li.nav-list-item(class= is_current(page.path) ? 'active' : '')
+				a.nav-list-link(class={active: is_current(page.path)} href= config.root + page.path target=tar)!= page.title
+		- })
+	//- - if (config.plugin.some(plugin => plugin == 'hexo-generator-feed'))
+	//- 	- const feedPath = config.feed.path ? config.feed.path : 'atom.xml'
+	//- 	li.nav-list-item
+	//- 		a.nav-list-link(class={active: is_current(feedPath)} href= config.root + feedPath target=tar)!= __('main.rss')

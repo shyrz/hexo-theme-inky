@@ -1,50 +1,80 @@
+@import '../variable';
+
 footer {
-  text-align: center;
-  color: $coffee-light-2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  padding: 20px 0 50px 0;
+  text-align: right;
+  color: $inky-black-l15;
+  * { margin: 0; padding: 0; }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-right: 36px;
 }
 
 footer a, footer a:link {
-  color: $coffee-light-2;
-  font-weight: 500;
+  color: $inky-black-l15;
+  font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px solid $coffee-light-2;
+  // border-bottom: 1px solid $inky-black-l10;
   word-wrap: break-word;
   transition: .2s ease-in-out;
   &:hover, &:active {
-    color: $coffee-light-1;
-    border-bottom-color: $coffee-light-1;
+    color: $inky-gold;
+    // border-bottom-color: $inky-black-l10;
+    text-decoration: underline;
   }
 }
 
+
 .copyright {
-  font-family: 'Source Sans Pro', "Microsoft Yahei", 'Helvetica Neue', Arial, sans-serif;
+  font-family: $inky-font-sans;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 300;
+}
+
+.footer-copyright-year {
+  display: inline-block;
+  margin-right: 3px;
+  font-family: $inky-font-sans;
+  font-weight: 300;
 }
 
 .footer-copyright-within {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 3px;
+  font-family: $inky-font-sans;
   font-size: inherit;
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &:before {
-    content: "†";
+    content: "🐺";
   }
 }
 
-.powered-by, .theme-info {
+.powered-by, .theme, .more {
   display: inline-block;
+  font-family: $inky-font-sans;
+  font-weight: 300;
   a, a:link {
-    margin: 0 5px;
+    font-family: inherit;
+    padding: 0 5px;
   }
 }
 
 .powered-by {
-  margin-right: 10px;
-  &:after {
-    content: "|";
-    padding-left: 10px;
-  }
+  // margin-right: 10px;
+  // &:after {
+  //   content: "|";
+  //   padding-left: 5px;
+  // }
 }

@@ -1,13 +1,17 @@
 //- archive.jade
 extends _partials/layout
 
+block site-title
+  != __('main.archives') + " · " + config.title
+
 block container
-  include _mixins/post
-  +postList()
+  include mixins
+  +archiveList()
 
-block pagination
-  include _mixins/paginator
-  +home()
+block paginator
+  .paginator
+    include mixins
+    +paginator(true)
 
-block information
-  include _partials/_components/information
+block footer
+  include _partials/_components/footer
