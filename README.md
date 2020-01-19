@@ -1,26 +1,47 @@
-# Tw1nkle
+# Inky
 
-> Another Hexo Theme :)
+
+Inky is a **Simple**, **Elegant** theme of hexo.
 
 ## Preview
 
 ![preview](http://ww2.sinaimg.cn/large/dcc02b70gw1f171t9103jj21kw0y3wif.jpg)
 
-## Broswer Support
+## Installing
 
-![broswer-support](https://camo.githubusercontent.com/88b2ddce6ee078ab96a3752a79cdd9aca895d1e3/687474703a2f2f696973736e616e2e636f6d2f6e657875732f6e6578742f62726f777365722d737570706f72742e706e67)
+- Remove default markdown renderer `marked` and use `markdown-it` instead.
+  ```bash
+  npm uninstall hexo-renderer-marked -S
+  npm install hexo-renderer-markdown-it markdown-it-emoji markdown-it-task-lists markdown-it-sub markdown-it-sup -S
+  ```
+
+
+- Go into your hexo blog folder
+  ```bash
+  cd YOUR_HEXO_BLOG_PATH
+  ```
+
+- Clone [Inky](https://github.com/sh7me/hexo-theme-inky) into `themes` folder and install dependencies.
+  ```bash
+  git clone https://github.com/sh7me/hexo-theme-inky/ themes/inky
+  cd themes/inky
+  yarn install
+  ```
 
 ## Contributing
 
 Any types of contribution are okay, waiting for your `pull request`.
 
-## Development
-
-Tw1nkle is a **Simple**, **Elegant** theme of hexo, update irregularly.
 
 ## Changelog
 
 [![hexo-image]][hexo-url]
 
-[hexo-image]: https://img.shields.io/badge/Hexo-3.x-02A8FE.svg?style=flat-square
+[hexo-image]: https://img.shields.io/badge/Hexo-3+-02A8FE.svg?style=flat-square
 [hexo-url]: http://hexo.io
+
+## License
+
+© 2016 - 2020 [Sh7me](https://github.com/sh7me)
+
+[Inky](https://github.com/sh7me/hexo-theme-inky) is released under the [MIT](https://github.com/sh7me/hexo-theme-inky/blob/master/LICENSE) license.

@@ -1,14 +1,11 @@
 # ---------------------------------------------------------------
-# Tw1nkle Config
+# Inky Config
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, Tw1nkle"
-
-# Rss
-rss: /atom.xml
+keywords: Hexo, Inky
 
 # Copyright Information
 ## Specify the date when the site was setup
@@ -20,53 +17,55 @@ since: 2015
 
 # When running hexo in a subdirectory (e.g. domain.tld/blog)
 # Remove leading slashes ( "/archives" -> "archives" )
-menu:
-  home: /
-  archives: /archives
-  categories: /categories
-  tags: /tags
-  about: /about
-  rss: /atom.xml
-  # Commonweal: /404.html
+
+# home: /
+archives: /archives
+categories: /categories
+tags: /tags
+about: /about.html
+rss: /atom.xml
+# Commonweal: /404.html
+
 
 # Place your favicon to /source directory.
 favicon: favicon.png
-logo: logo-512.png
 
 # Google fonts CDN
 googlefonts: false
-
-
-
-archive_generator:
-  per_page: 0
-  yearly: false
-  monthly: false
-  daily: false
-
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
 # Comment
-# e.g disqus: Phantr4x
-disqus: Phantr4x
-duoshuo:
+# e.g disqus: [your_shortname]
+# disqus: sh7me
+# dove:
+# livere:
+gitalk:
+  enable: true
+  clientID: ef2c9f810d80f033c0f6
+  clientSecret: aa0c9d3ffbf5fb711378999b9dc679142d3c6047
+  repo: blog-comments
+  owner: sh7me
+  admin:
+    - sh7me
+  labels:
+    - gitalk
+  pagerDirection: last
+# valine:
+#   enable: true
+#   appid: vtrzX1OeP3kTNUHa5biL0jnA-gzGzoHsz
+#   appkey: Ipq1AXhLKUfr29vqQit1f0WG
 
 # Analytics
 # google-analytics:
 google_analytics:
 # baidu-analytics:
-baidu_analytics: //hm.baidu.com/hm.js?b41062d843f1043fb808af9b7f4e7dd6
-
-
+baidu_analytics: # //hm.baidu.com/hm.js?b41062d843f1043fb808af9b7f4e7dd6
 
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
-
-# Theme version
-version: 0.1.0

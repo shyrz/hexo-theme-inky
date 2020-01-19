@@ -1,26 +1,33 @@
 {
-  "name": "hexo-site",
+  "name": "hexo-theme-inky",
   "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": ""
+  "description": "文章墨點，述諸字节",
+  "main": "index.js",
+  "scripts": {
+      "test": "npm run build",
+      "build": "node-sass source/scss/inky.scss -o source/css --output-style compressed && postcss source/css/inky.css -u autoprefixer -r",
+      "watch": "node-sass -w source/scss -o source/css"
   },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/sh7me/hexo-theme-inky"
+  },
+  "keywords": [
+      "hexo",
+      "theme"
+  ],
+  "author": "Sh7me <i@sh7.me> (https://sh7.me)",
+  "license": "Apache-2.0",
+  "bugs": {
+      "url": "https://github.com/sh7me/hexo-theme-inky/issues"
+  },
+  "homepage": "https://github.com/sh7me/hexo-theme-inky/README.md",
+  "devDependencies": {},
   "dependencies": {
-    "hexo": "^3.1.0",
-    "hexo-generator-archive": "^0.1.2",
-    "hexo-generator-category": "^0.1.2",
-    "hexo-generator-index": "^0.1.2",
-    "hexo-generator-tag": "^0.1.1",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-stylus": "^0.3.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-server": "^0.1.2"
-  },
-  "devDependencies": {
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
-    "sass-loader": "^3.1.2",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7"
+      "autoprefixer": "^9.2.0",
+      "node-sass": "^4.10.0",
+      "postcss": "^7.0.5",
+      "postcss-cli": "^6.0.0",
+      "scss-compile": "^0.1.7"
   }
 }
